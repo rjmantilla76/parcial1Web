@@ -9,12 +9,14 @@ export default class Followers extends Component {
     
     }
     render(){
-        console.log(this.props.user);
-        if(this.props.user === undefined){
+        console.log(this.props.users);
+        if(this.props.users === ''){
             return <div></div>;
         }
-        return this.props.users.map(user => (
-        <div id ={user.id} key={user.id} style={{height: 250, width: '100%'}} className="user col-5 row">
+        return<div>{this.props.users.map(user => {
+            console.log(user);
+            return 
+        (<div id ={user.id} key={user.id} style={{height: 250, width: '100%'}} className="user col-5 row">
             <div className="col-4">
             <img className="profilePic img-fluid" src={user.avatar} alt="Profile pic" />
             </div>
@@ -32,7 +34,7 @@ export default class Followers extends Component {
             </div>
 
             <div className="col-1">&nbsp;</div>
-        </div>
-        ));
+        </div>);}
+        ) }</div>;
     }
 }
