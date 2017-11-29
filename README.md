@@ -16,4 +16,4 @@ This app recolects some knowledge of the Github follower graph (from your querie
 
 My special sauce then is the caching to avoid hitting the API imit and the anonymized graph of followers.
 
-To run the git code, run two instancs of 'npm start', one from the root of the client folder, and the other from the root of the backend folder. The proxy is currently set for the backend to run on the port 5002, and the client on the default port (3000).
+To run the git code, run two instances of 'npm install' and 'npm start', one from the root of the client folder, and the other from the root of the backend folder. The proxy is currently set for the backend to run on the port 5002, and the client on the default port (3000).
